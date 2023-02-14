@@ -16,3 +16,17 @@ catch(error){
 }
 
 }
+
+export const getUser = async() => {
+    try{
+    
+       return await axios.get(`${URL}/all`);
+    
+    }
+    catch(error){
+    
+        console.log("error in api get users",error);
+    
+    }
+    
+    }
